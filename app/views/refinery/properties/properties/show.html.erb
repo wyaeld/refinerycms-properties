@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @property.region %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @property.address %>
+    </p>
+  </section>
+  <section>
+    <h1>Rent Amount</h1>
+    <p>
+      <%=raw @property.rent_amount %>
+    </p>
+  </section>
+  <section>
+    <h1>Region</h1>
+    <p>
+      <%=raw @property.region %>
+    </p>
+  </section>
+  <section>
+    <h1>City</h1>
+    <p>
+      <%=raw @property.city %>
+    </p>
+  </section>
+  <section>
+    <h1>Suburb</h1>
+    <p>
+      <%=raw @property.suburb %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @property.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Bedrooms</h1>
+    <p>
+      <%=raw @property.bedrooms %>
+    </p>
+  </section>
+  <section>
+    <h1>Available From</h1>
+    <p>
+      <%=raw @property.available_from %>
+    </p>
+  </section>
+  <section>
+    <h1>Active</h1>
+    <p>
+      <%=raw @property.active %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="properties">
+      <% @properties.each do |property| %>
+        <li>
+          <%= link_to property.region, refinery.properties_property_path(property) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

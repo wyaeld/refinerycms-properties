@@ -1,0 +1,35 @@
+tr:
+  refinery:
+    plugins:
+      properties:
+        title: Properties
+    properties:
+      admin:
+        properties:
+          actions:
+            create_new: Yeni Ekle Property
+            reorder: Tekrar sirala Properties
+            reorder_done: Tekrar siralama tamamlandiProperties
+          records:
+            title: Properties
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Properties yok henuz.  Tikla "Yeni Ekle Property" eklemek senin ilk property.
+          property:
+            view_live_html: Bunu canlu property goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle property
+            delete: Bunu Sil property sonsuza dek
+      properties:
+        show:
+          other: Diger Properties
+  activerecord:
+    attributes:
+      'refinery/properties/property':
+        address: Address
+        rent_amount: Rent Amount
+        region: Region
+        city: City
+        suburb: Suburb
+        description: Description
+        bedrooms: Bedrooms
+        available_from: Available From
+        active: Active

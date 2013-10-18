@@ -1,0 +1,35 @@
+cs:
+  refinery:
+    plugins:
+      properties:
+        title: Properties
+    properties:
+      admin:
+        properties:
+          actions:
+            create_new: Přidat Property
+            reorder: Řadit Properties
+            reorder_done: Konec řazení Properties
+          records:
+            title: Properties
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Properties. Zvolte "Přidat Property" pro přidání prvního property.
+          property:
+            view_live_html: Zobrazit náhled property<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit property
+            delete: Smazat property
+      properties:
+        show:
+          other: Další Properties
+  activerecord:
+    attributes:
+      'refinery/properties/property':
+        address: Address
+        rent_amount: Rent Amount
+        region: Region
+        city: City
+        suburb: Suburb
+        description: Description
+        bedrooms: Bedrooms
+        available_from: Available From
+        active: Active

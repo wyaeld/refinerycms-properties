@@ -1,0 +1,35 @@
+nl:
+  refinery:
+    plugins:
+      properties:
+        title: Properties
+    properties:
+      admin:
+        properties:
+          actions:
+            create_new: Nieuwe Property toevoegen
+            reorder: De volgorde van de Properties wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Property-volgorde
+          records:
+            title: Properties
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Properties. Druk op 'Nieuwe Property toevoegen' om de eerste toe te voegen.
+          property:
+            view_live_html: Deze property op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze property
+            delete: Deze property definitief verwijderen
+      properties:
+        show:
+          other: Andere Properties
+  activerecord:
+    attributes:
+      'refinery/properties/property':
+        address: Address
+        rent_amount: Rent Amount
+        region: Region
+        city: City
+        suburb: Suburb
+        description: Description
+        bedrooms: Bedrooms
+        available_from: Available From
+        active: Active
